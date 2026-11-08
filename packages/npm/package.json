@@ -1,0 +1,41 @@
+{
+  "name": "hisab-age-calculator",
+  "version": "1.0.0",
+  "description": "Gregorian and tabular civil (Kuwaiti) Hijri age calculator. Years, months and days by borrowing, total days, and the next birthday. Arabic-Indic digits. Offline.",
+  "keywords": [
+    "age",
+    "hijri",
+    "gregorian",
+    "islamic-calendar",
+    "arabic",
+    "calculator",
+    "حساب-العمر"
+  ],
+  "homepage": "https://hisabaleumr.com/",
+  "bugs": {
+    "url": "https://github.com/nbkdevs/hisab-al-umr/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbkdevs/hisab-al-umr.git",
+    "directory": "packages/npm"
+  },
+  "license": "MIT",
+  "author": "Hisab Al-Umr (https://hisabaleumr.com/)",
+  "main": "lib/index.js",
+  "bin": {
+    "hisab-age-calculator": "bin/cli.js"
+  },
+  "files": [
+    "lib/",
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/index.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

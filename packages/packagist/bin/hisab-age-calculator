@@ -1,0 +1,109 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use HisabAlUmr\AgeCalculator\AgeCalculator;
+use HisabAlUmr\AgeCalculator\AgeException;
+
+if (!class_exists(AgeCalculator::class)) {
+    $dir = __DIR__;
+    for ($i = 0; $i < 8; $i++) {
+        $candidate = $dir . '/vendor/autoload.php';
+        if (is_file($candidate)) {
+            require $candidate;
+            break;
+        }
+        $parent = dirname($dir);
+        if ($parent === $dir) {
+            break;
+        }
+        $dir = $parent;
+    }
+}
+
+if (!class_exists(AgeCalculator::class)) {
+    fwrite(STDERR, "Run composer install in the hisab-al-umr checkout first.\n");
+    exit(1);
+}
+
+$args = array_slice($argv, 1);
+$birth = null;
+$calendar = 'gregorian';
+$asOf = null;
+$asOfCalendar = 'gregorian';
+$json = false;
+
+for ($i = 0; $i < count($args); $i++) {
+    $arg = $args[$i];
+    $next = $args[$i + 1] ?? null;
+    if ($arg === '--help' || $arg === '-h') {
+        fwrite(STDOUT, <<<HELP
+hisab-age-calculator — Gregorian and tabular civil Hijri age
+
+Usage:
+  hisab-age-calculator --birth 1990-05-15 [--as-of 2026-11-08] [--json]
+  hisab-age-calculator --birth 1420-09-01 --calendar hijri
+
+Arabic-Indic digits are accepted. Offline: no network calls.
+HELP);
+        exit(0);
+    }
+    if ($arg === '--version') {
+        fwrite(STDOUT, 'hisab-age-calculator ' . AgeCalculator::VERSION . "\n");
+        exit(0);
+    }
+    if ($arg === '--json') {
+        $json = true;
+        continue;
+    }
+    if (($arg === '--birth' || $arg === '--calendar' || $arg === '--birth-calendar' || $arg === '--as-of' || $arg === '--as-of-calendar') && $next === null) {
+        fwrite(STDERR, "Missing value for {$arg}.\n");
+        exit(1);
+    }
+    if ($arg === '--birth') {
+        $birth = $next;
+        $i++;
+        continue;
+    }
+    if ($arg === '--calendar' || $arg === '--birth-calendar') {
+        $calendar = $next;
+        $i++;
+        continue;
+    }
+    if ($arg === '--as-of') {
+        $asOf = $next;
+        $i++;
+        continue;
+    }
+    if ($arg === '--as-of-calendar') {
+        $asOfCalendar = $next;
+        $i++;
+        continue;
+    }
+    if ($arg !== '' && $arg[0] !== '-' && $birth === null) {
+        $birth = $arg;
+        continue;
+    }
+    fwrite(STDERR, "Unknown argument {$arg}.\n");
+    exit(1);
+}
+
+if ($birth === null) {
+    fwrite(STDERR, "Pass a birth date, for example: hisab-age-calculator --birth 1990-05-15\n");
+    exit(1);
+}
+
+try {
+    $result = AgeCalculator::calculate($birth, $calendar, $asOf, $asOfCalendar);
+} catch (AgeException $exception) {
+    fwrite(STDERR, $exception->getMessage() . "\n");
+    exit(1);
+}
+
+if ($json) {
+    fwrite(STDOUT, json_encode($result, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) . "\n");
+} else {
+    fwrite(STDOUT, AgeCalculator::format($result) . "\n");
+}
+exit(0);

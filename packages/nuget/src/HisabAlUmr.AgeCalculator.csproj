@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>HisabAlUmr.AgeCalculator</RootNamespace>
+    <AssemblyName>HisabAlUmr.AgeCalculator</AssemblyName>
+    <Version>1.0.0</Version>
+    <Authors>Hisab Al-Umr</Authors>
+    <Company>Hisab Al-Umr</Company>
+    <Description>Gregorian and tabular civil (Kuwaiti) Hijri age calculator. Years, months and days by borrowing, total days, and the next birthday. Arabic-Indic digits. Offline.</Description>
+    <PackageId>HisabAlUmr.AgeCalculator</PackageId>
+    <PackageTags>age;hijri;gregorian;islamic-calendar;arabic;calculator</PackageTags>
+    <PackageProjectUrl>https://hisabaleumr.com/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nbkdevs/hisab-al-umr</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>

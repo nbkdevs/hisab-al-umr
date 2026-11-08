@@ -1,0 +1,17 @@
+{
+  "name": "hisab-age-calculator-docker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local web UI and JSON API for the Hisab Al-Umr age calculator. Not published from this repository.",
+  "homepage": "https://hisabaleumr.com/",
+  "license": "MIT",
+  "author": "Hisab Al-Umr (https://hisabaleumr.com/)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/server.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

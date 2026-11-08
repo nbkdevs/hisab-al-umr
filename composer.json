@@ -1,0 +1,52 @@
+{
+    "name": "hisabaleumr/age-calculator",
+    "description": "Gregorian and tabular civil (Kuwaiti) Hijri age calculator. Years, months and days by borrowing, total days lived, and the next birthday in both calendars. Accepts Arabic-Indic digits. Offline, no dependencies.",
+    "type": "library",
+    "keywords": [
+        "age",
+        "hijri",
+        "gregorian",
+        "islamic-calendar",
+        "arabic",
+        "calculator",
+        "حساب-العمر"
+    ],
+    "homepage": "https://hisabaleumr.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hisab Al-Umr",
+            "homepage": "https://hisabaleumr.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/nbkdevs/hisab-al-umr/issues",
+        "source": "https://github.com/nbkdevs/hisab-al-umr"
+    },
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HisabAlUmr\\AgeCalculator\\": "packages/packagist/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HisabAlUmr\\AgeCalculator\\Tests\\": "packages/packagist/tests/"
+        }
+    },
+    "bin": [
+        "packages/packagist/bin/hisab-age-calculator"
+    ],
+    "scripts": {
+        "test": "phpunit -c packages/packagist/phpunit.xml"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
