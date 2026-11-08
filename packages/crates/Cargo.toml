@@ -1,0 +1,24 @@
+[package]
+name = "hisab-age-calculator"
+version = "1.0.0"
+edition = "2021"
+description = "Gregorian and tabular civil (Kuwaiti) Hijri age calculator. Offline library and CLI."
+license = "MIT"
+authors = ["Hisab Al-Umr"]
+homepage = "https://hisabaleumr.com/"
+documentation = "https://hisabaleumr.com/"
+repository = "https://github.com/nbkdevs/hisab-al-umr"
+readme = "README.md"
+keywords = ["hijri", "gregorian", "calendar", "age", "arabic"]
+categories = ["date-and-time", "command-line-utilities"]
+include = ["src/**", "Cargo.toml", "README.md", "LICENSE"]
+
+[lib]
+name = "hisab_age_calculator"
+
+[[bin]]
+name = "hisab-age-calculator"
+path = "src/bin/cli.rs"
+
+[dev-dependencies]
+serde_json = "1"

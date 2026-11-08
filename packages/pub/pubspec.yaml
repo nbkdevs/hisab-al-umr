@@ -1,0 +1,16 @@
+name: hisab_age_calculator
+description: Gregorian and tabular civil Hijri age calculator. Borrowed years, months and days, total days, and the next birthday.
+version: 1.0.0
+homepage: https://hisabaleumr.com/
+repository: https://github.com/nbkdevs/hisab-al-umr
+issue_tracker: https://github.com/nbkdevs/hisab-al-umr/issues
+topics: [age, hijri, calendar, arabic]
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+executables:
+  hisab_age_calculator:
+
+dev_dependencies:
+  test: ^1.25.0

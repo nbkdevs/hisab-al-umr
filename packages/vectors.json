@@ -1,0 +1,439 @@
+{
+  "leapYearsInCycle": [
+    2,
+    5,
+    7,
+    10,
+    13,
+    16,
+    18,
+    21,
+    24,
+    26,
+    29
+  ],
+  "hijriEpochJdn": 1948440,
+  "note": "Civil/Kuwaiti tabular Hijri. 1 Ramadan 1420 AH is 1999-12-09, one day from the often-cited 1999-12-08. 2000-01-01 is 1420-09-24 (24 Ramadan 1420).",
+  "conversions": [
+    {
+      "gregorian": "0622-07-19",
+      "hijri": "0001-01-01",
+      "jdn": 1948440,
+      "weekday": 5,
+      "hijriMonthEn": "Muharram"
+    },
+    {
+      "gregorian": "1999-12-09",
+      "hijri": "1420-09-01",
+      "jdn": 2451522,
+      "weekday": 4,
+      "hijriMonthEn": "Ramadan"
+    },
+    {
+      "gregorian": "2000-01-01",
+      "hijri": "1420-09-24",
+      "jdn": 2451545,
+      "weekday": 6,
+      "hijriMonthEn": "Ramadan"
+    },
+    {
+      "gregorian": "1990-05-15",
+      "hijri": "1410-10-19",
+      "jdn": 2448027,
+      "weekday": 2,
+      "hijriMonthEn": "Shawwal"
+    },
+    {
+      "gregorian": "2026-11-08",
+      "hijri": "1448-05-27",
+      "jdn": 2461353,
+      "weekday": 0,
+      "hijriMonthEn": "Jumada al-Ula"
+    },
+    {
+      "gregorian": "2026-10-04",
+      "hijri": "1448-04-21",
+      "jdn": 2461318,
+      "weekday": 0,
+      "hijriMonthEn": "Rabi al-Thani"
+    },
+    {
+      "gregorian": "2000-02-29",
+      "hijri": "1420-11-24",
+      "jdn": 2451604,
+      "weekday": 2,
+      "hijriMonthEn": "Dhu al-Qidah"
+    },
+    {
+      "gregorian": "0624-06-26",
+      "hijri": "0002-12-30",
+      "jdn": 1949148,
+      "weekday": 6,
+      "hijriMonthEn": "Dhu al-Hijjah"
+    },
+    {
+      "gregorian": "0625-06-16",
+      "hijri": "0004-01-01",
+      "jdn": 1949503,
+      "weekday": 4,
+      "hijriMonthEn": "Muharram"
+    },
+    {
+      "gregorian": "1999-12-08",
+      "hijri": "1420-08-29",
+      "jdn": 2451521,
+      "weekday": 3,
+      "hijriMonthEn": "Shaban"
+    }
+  ],
+  "ages": [
+    {
+      "birth": "1990-05-15",
+      "birthCalendar": "gregorian",
+      "asOf": "2026-11-08",
+      "asOfCalendar": "gregorian",
+      "birthGregorian": "1990-05-15",
+      "birthHijri": "1410-10-19",
+      "asOfGregorian": "2026-11-08",
+      "asOfHijri": "1448-05-27",
+      "gregorianAge": {
+        "years": 36,
+        "months": 5,
+        "days": 24
+      },
+      "hijriAge": {
+        "years": 37,
+        "months": 7,
+        "days": 8
+      },
+      "totalDays": 13326,
+      "birthWeekday": 2,
+      "asOfWeekday": 0,
+      "nextGregorianBirthday": "2027-05-15",
+      "daysUntilGregorianBirthday": 188,
+      "nextHijriBirthday": "1448-10-19",
+      "nextHijriBirthdayGregorian": "2027-03-28",
+      "daysUntilHijriBirthday": 140,
+      "leapDayBirth": false
+    },
+    {
+      "birth": "2000-01-01",
+      "birthCalendar": "gregorian",
+      "asOf": "2026-10-04",
+      "asOfCalendar": "gregorian",
+      "birthGregorian": "2000-01-01",
+      "birthHijri": "1420-09-24",
+      "asOfGregorian": "2026-10-04",
+      "asOfHijri": "1448-04-21",
+      "gregorianAge": {
+        "years": 26,
+        "months": 9,
+        "days": 3
+      },
+      "hijriAge": {
+        "years": 27,
+        "months": 6,
+        "days": 27
+      },
+      "totalDays": 9773,
+      "birthWeekday": 6,
+      "asOfWeekday": 0,
+      "nextGregorianBirthday": "2027-01-01",
+      "daysUntilGregorianBirthday": 89,
+      "nextHijriBirthday": "1448-09-24",
+      "nextHijriBirthdayGregorian": "2027-03-03",
+      "daysUntilHijriBirthday": 150,
+      "leapDayBirth": false
+    },
+    {
+      "birth": "2000-02-29",
+      "birthCalendar": "gregorian",
+      "asOf": "2023-03-01",
+      "asOfCalendar": "gregorian",
+      "birthGregorian": "2000-02-29",
+      "birthHijri": "1420-11-24",
+      "asOfGregorian": "2023-03-01",
+      "asOfHijri": "1444-08-08",
+      "gregorianAge": {
+        "years": 23,
+        "months": 0,
+        "days": 0
+      },
+      "hijriAge": {
+        "years": 23,
+        "months": 8,
+        "days": 14
+      },
+      "totalDays": 8401,
+      "birthWeekday": 2,
+      "asOfWeekday": 3,
+      "nextGregorianBirthday": "2023-03-01",
+      "daysUntilGregorianBirthday": 0,
+      "nextHijriBirthday": "1444-11-24",
+      "nextHijriBirthdayGregorian": "2023-06-13",
+      "daysUntilHijriBirthday": 104,
+      "leapDayBirth": true
+    },
+    {
+      "birth": "2000-02-29",
+      "birthCalendar": "gregorian",
+      "asOf": "2023-02-28",
+      "asOfCalendar": "gregorian",
+      "birthGregorian": "2000-02-29",
+      "birthHijri": "1420-11-24",
+      "asOfGregorian": "2023-02-28",
+      "asOfHijri": "1444-08-07",
+      "gregorianAge": {
+        "years": 22,
+        "months": 11,
+        "days": 30
+      },
+      "hijriAge": {
+        "years": 23,
+        "months": 8,
+        "days": 13
+      },
+      "totalDays": 8400,
+      "birthWeekday": 2,
+      "asOfWeekday": 2,
+      "nextGregorianBirthday": "2023-03-01",
+      "daysUntilGregorianBirthday": 1,
+      "nextHijriBirthday": "1444-11-24",
+      "nextHijriBirthdayGregorian": "2023-06-13",
+      "daysUntilHijriBirthday": 105,
+      "leapDayBirth": true
+    },
+    {
+      "birth": "2000-02-29",
+      "birthCalendar": "gregorian",
+      "asOf": "2024-02-29",
+      "asOfCalendar": "gregorian",
+      "birthGregorian": "2000-02-29",
+      "birthHijri": "1420-11-24",
+      "asOfGregorian": "2024-02-29",
+      "asOfHijri": "1445-08-19",
+      "gregorianAge": {
+        "years": 24,
+        "months": 0,
+        "days": 0
+      },
+      "hijriAge": {
+        "years": 24,
+        "months": 8,
+        "days": 25
+      },
+      "totalDays": 8766,
+      "birthWeekday": 2,
+      "asOfWeekday": 4,
+      "nextGregorianBirthday": "2024-02-29",
+      "daysUntilGregorianBirthday": 0,
+      "nextHijriBirthday": "1445-11-24",
+      "nextHijriBirthdayGregorian": "2024-06-01",
+      "daysUntilHijriBirthday": 93,
+      "leapDayBirth": true
+    },
+    {
+      "birth": "1420-09-01",
+      "birthCalendar": "hijri",
+      "asOf": "1999-12-09",
+      "asOfCalendar": "gregorian",
+      "birthGregorian": "1999-12-09",
+      "birthHijri": "1420-09-01",
+      "asOfGregorian": "1999-12-09",
+      "asOfHijri": "1420-09-01",
+      "gregorianAge": {
+        "years": 0,
+        "months": 0,
+        "days": 0
+      },
+      "hijriAge": {
+        "years": 0,
+        "months": 0,
+        "days": 0
+      },
+      "totalDays": 0,
+      "birthWeekday": 4,
+      "asOfWeekday": 4,
+      "nextGregorianBirthday": "1999-12-09",
+      "daysUntilGregorianBirthday": 0,
+      "nextHijriBirthday": "1420-09-01",
+      "nextHijriBirthdayGregorian": "1999-12-09",
+      "daysUntilHijriBirthday": 0,
+      "leapDayBirth": false
+    },
+    {
+      "birth": "1420-09-01",
+      "birthCalendar": "hijri",
+      "asOf": "2026-11-08",
+      "asOfCalendar": "gregorian",
+      "birthGregorian": "1999-12-09",
+      "birthHijri": "1420-09-01",
+      "asOfGregorian": "2026-11-08",
+      "asOfHijri": "1448-05-27",
+      "gregorianAge": {
+        "years": 26,
+        "months": 10,
+        "days": 30
+      },
+      "hijriAge": {
+        "years": 27,
+        "months": 8,
+        "days": 26
+      },
+      "totalDays": 9831,
+      "birthWeekday": 4,
+      "asOfWeekday": 0,
+      "nextGregorianBirthday": "2026-12-09",
+      "daysUntilGregorianBirthday": 31,
+      "nextHijriBirthday": "1448-09-01",
+      "nextHijriBirthdayGregorian": "2027-02-08",
+      "daysUntilHijriBirthday": 92,
+      "leapDayBirth": false
+    },
+    {
+      "birth": "0002-12-30",
+      "birthCalendar": "hijri",
+      "asOf": "0004-01-01",
+      "asOfCalendar": "hijri",
+      "birthGregorian": "0624-06-26",
+      "birthHijri": "0002-12-30",
+      "asOfGregorian": "0625-06-16",
+      "asOfHijri": "0004-01-01",
+      "gregorianAge": {
+        "years": 0,
+        "months": 11,
+        "days": 21
+      },
+      "hijriAge": {
+        "years": 1,
+        "months": 0,
+        "days": 0
+      },
+      "totalDays": 355,
+      "birthWeekday": 6,
+      "asOfWeekday": 4,
+      "nextGregorianBirthday": "0625-06-26",
+      "daysUntilGregorianBirthday": 10,
+      "nextHijriBirthday": "0004-01-01",
+      "nextHijriBirthdayGregorian": "0625-06-16",
+      "daysUntilHijriBirthday": 0,
+      "leapDayBirth": false
+    },
+    {
+      "birth": "2020-03-31",
+      "birthCalendar": "gregorian",
+      "asOf": "2021-03-01",
+      "asOfCalendar": "gregorian",
+      "birthGregorian": "2020-03-31",
+      "birthHijri": "1441-08-06",
+      "asOfGregorian": "2021-03-01",
+      "asOfHijri": "1442-07-17",
+      "gregorianAge": {
+        "years": 0,
+        "months": 10,
+        "days": 29
+      },
+      "hijriAge": {
+        "years": 0,
+        "months": 11,
+        "days": 11
+      },
+      "totalDays": 335,
+      "birthWeekday": 2,
+      "asOfWeekday": 1,
+      "nextGregorianBirthday": "2021-03-31",
+      "daysUntilGregorianBirthday": 30,
+      "nextHijriBirthday": "1442-08-06",
+      "nextHijriBirthdayGregorian": "2021-03-20",
+      "daysUntilHijriBirthday": 19,
+      "leapDayBirth": false
+    },
+    {
+      "birth": "2019-01-31",
+      "birthCalendar": "gregorian",
+      "asOf": "2019-03-01",
+      "asOfCalendar": "gregorian",
+      "birthGregorian": "2019-01-31",
+      "birthHijri": "1440-05-24",
+      "asOfGregorian": "2019-03-01",
+      "asOfHijri": "1440-06-23",
+      "gregorianAge": {
+        "years": 0,
+        "months": 0,
+        "days": 29
+      },
+      "hijriAge": {
+        "years": 0,
+        "months": 0,
+        "days": 29
+      },
+      "totalDays": 29,
+      "birthWeekday": 4,
+      "asOfWeekday": 5,
+      "nextGregorianBirthday": "2020-01-31",
+      "daysUntilGregorianBirthday": 336,
+      "nextHijriBirthday": "1441-05-24",
+      "nextHijriBirthdayGregorian": "2020-01-20",
+      "daysUntilHijriBirthday": 325,
+      "leapDayBirth": false
+    },
+    {
+      "birth": "1990-05-15",
+      "birthCalendar": "gregorian",
+      "asOf": "1448-05-27",
+      "asOfCalendar": "hijri",
+      "birthGregorian": "1990-05-15",
+      "birthHijri": "1410-10-19",
+      "asOfGregorian": "2026-11-08",
+      "asOfHijri": "1448-05-27",
+      "gregorianAge": {
+        "years": 36,
+        "months": 5,
+        "days": 24
+      },
+      "hijriAge": {
+        "years": 37,
+        "months": 7,
+        "days": 8
+      },
+      "totalDays": 13326,
+      "birthWeekday": 2,
+      "asOfWeekday": 0,
+      "nextGregorianBirthday": "2027-05-15",
+      "daysUntilGregorianBirthday": 188,
+      "nextHijriBirthday": "1448-10-19",
+      "nextHijriBirthdayGregorian": "2027-03-28",
+      "daysUntilHijriBirthday": 140,
+      "leapDayBirth": false
+    },
+    {
+      "birth": "1410-10-19",
+      "birthCalendar": "hijri",
+      "asOf": "1448-05-27",
+      "asOfCalendar": "hijri",
+      "birthGregorian": "1990-05-15",
+      "birthHijri": "1410-10-19",
+      "asOfGregorian": "2026-11-08",
+      "asOfHijri": "1448-05-27",
+      "gregorianAge": {
+        "years": 36,
+        "months": 5,
+        "days": 24
+      },
+      "hijriAge": {
+        "years": 37,
+        "months": 7,
+        "days": 8
+      },
+      "totalDays": 13326,
+      "birthWeekday": 2,
+      "asOfWeekday": 0,
+      "nextGregorianBirthday": "2027-05-15",
+      "daysUntilGregorianBirthday": 188,
+      "nextHijriBirthday": "1448-10-19",
+      "nextHijriBirthdayGregorian": "2027-03-28",
+      "daysUntilHijriBirthday": 140,
+      "leapDayBirth": false
+    }
+  ]
+}

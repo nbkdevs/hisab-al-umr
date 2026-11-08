@@ -1,0 +1,68 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "json"
+begin
+  require "hisab_age_calculator"
+rescue LoadError
+  require_relative "../lib/hisab_age_calculator"
+end
+
+birth = nil
+calendar = "gregorian"
+as_of = nil
+as_of_calendar = "gregorian"
+json = false
+args = ARGV.dup
+until args.empty?
+  arg = args.shift
+  case arg
+  when "--help", "-h"
+    puts <<~HELP
+      hisab-age-calculator — Gregorian and tabular civil Hijri age
+
+      Usage:
+        hisab-age-calculator --birth 1990-05-15 [--as-of 2026-11-08] [--json]
+        hisab-age-calculator --birth 1420-09-01 --calendar hijri
+    HELP
+    exit 0
+  when "--version"
+    puts "hisab-age-calculator #{HisabAgeCalculator::VERSION}"
+    exit 0
+  when "--json"
+    json = true
+  when "--birth"
+    birth = args.shift
+  when "--calendar", "--birth-calendar"
+    calendar = args.shift
+  when "--as-of"
+    as_of = args.shift
+  when "--as-of-calendar"
+    as_of_calendar = args.shift
+  else
+    if !arg.start_with?("-") && birth.nil?
+      birth = arg
+    else
+      warn "Unknown argument #{arg}."
+      exit 1
+    end
+  end
+end
+
+if birth.nil?
+  warn "Pass a birth date, for example: hisab-age-calculator --birth 1990-05-15"
+  exit 1
+end
+
+begin
+  result = HisabAgeCalculator.calculate(birth, birth_calendar: calendar, as_of: as_of, as_of_calendar: as_of_calendar)
+rescue HisabAgeCalculator::AgeError => e
+  warn e.message
+  exit 1
+end
+
+if json
+  puts JSON.pretty_generate(result)
+else
+  puts HisabAgeCalculator.format_report(result)
+end

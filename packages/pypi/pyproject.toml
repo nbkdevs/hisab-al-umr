@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hisab-age-calculator"
+version = "1.0.0"
+description = "Gregorian and tabular civil (Kuwaiti) Hijri age calculator. Years, months and days by borrowing, total days, and the next birthday. Arabic-Indic digits. Offline."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Hisab Al-Umr" }]
+requires-python = ">=3.9"
+keywords = ["age", "hijri", "gregorian", "islamic-calendar", "arabic", "calculator", "حساب العمر"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Natural Language :: Arabic",
+    "Natural Language :: English",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+
+[project.urls]
+Homepage = "https://hisabaleumr.com/"
+Documentation = "https://hisabaleumr.com/"
+Source = "https://github.com/nbkdevs/hisab-al-umr"
+Issues = "https://github.com/nbkdevs/hisab-al-umr/issues"
+
+[project.scripts]
+hisab-age-calculator = "hisab_age_calculator.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

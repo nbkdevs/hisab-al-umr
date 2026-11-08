@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>حساب العمر بالهجري والميلادي</title>
+  <style>
+    :root { color-scheme: light; --ink: #1c1915; --sand: #f3ecdf; --card: #fffdf8; --line: #e2d5c3; --palm: #0f6b4c; --palm-ink: #f4fff8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Noto Naskh Arabic", "Geeza Pro", Tahoma, sans-serif; background: var(--sand); color: var(--ink); }
+    main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+    h1 { font-size: 1.8rem; line-height: 1.4; margin: 0 0 0.4rem; }
+    p { line-height: 1.7; }
+    form, .result { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 1rem 1.1rem; }
+    label { display: block; font-weight: 700; margin: 0.8rem 0 0.3rem; }
+    input, select, button { font: inherit; width: 100%; padding: 0.7rem 0.8rem; border-radius: 10px; border: 1px solid var(--line); background: #fff; }
+    button { margin-top: 1rem; background: var(--palm); color: var(--palm-ink); border: 0; cursor: pointer; font-weight: 700; }
+    .result { margin-top: 1rem; }
+    .result dl { display: grid; grid-template-columns: 8rem 1fr; gap: 0.35rem 0.8rem; margin: 0; }
+    dt { color: #5c5348; }
+    .note { font-size: 0.92rem; color: #5c5348; }
+    a { color: var(--palm); }
+    footer { margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>حساب العمر بالهجري والميلادي</h1>
+    <p>حاسبة محلية بلا اتصال. العمر بالسنوات والأشهر والأيام، لا بقسمة الأيام على 365. التقويم الهجري جدولي مدني.</p>
+    <form id="age-form">
+      <label for="birth">تاريخ الميلاد</label>
+      <input id="birth" name="birth" value="1990-05-15" inputmode="numeric" autocomplete="bday" required>
+      <label for="calendar">تقويم الميلاد</label>
+      <select id="calendar" name="calendar">
+        <option value="gregorian">ميلادي</option>
+        <option value="hijri">هجري</option>
+      </select>
+      <label for="asof">حتى تاريخ (اختياري)</label>
+      <input id="asof" name="asof" value="2026-11-08" inputmode="numeric">
+      <button type="submit">احسب</button>
+    </form>
+    <section class="result" id="result" hidden>
+      <dl>
+        <dt>الميلادي</dt><dd id="out-g"></dd>
+        <dt>الهجري</dt><dd id="out-h"></dd>
+        <dt>الأيام</dt><dd id="out-days"></dd>
+        <dt>الميلاد القادم</dt><dd id="out-next"></dd>
+        <dt>الهجري القادم</dt><dd id="out-next-h"></dd>
+      </dl>
+    </section>
+    <p class="note" id="note"></p>
+    <footer>
+      <a href="https://hisabaleumr.com/">حساب العمر بالهجري والميلادي</a>
+    </footer>
+  </main>
+  <script src="age.js"></script>
+  <script>
+    const form = document.getElementById("age-form");
+    const result = document.getElementById("result");
+    document.getElementById("note").textContent = HisabAge.LIMITATION_AR;
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const birth = document.getElementById("birth").value;
+      const calendar = document.getElementById("calendar").value;
+      const asOfValue = document.getElementById("asof").value.trim();
+      try {
+        const age = HisabAge.calculateAge(birth, calendar, asOfValue || null);
+        const g = age.gregorianAge;
+        const h = age.hijriAge;
+        document.getElementById("out-g").textContent = g.years + " سنة، " + g.months + " أشهر، " + g.days + " يومًا";
+        document.getElementById("out-h").textContent = h.years + " سنة، " + h.months + " أشهر، " + h.days + " يومًا (" + age.birth.hijri + " " + age.birth.hijriMonthAr + ")";
+        document.getElementById("out-days").textContent = String(age.totalDays);
+        document.getElementById("out-next").textContent = age.nextGregorianBirthday.date + " (بعد " + age.nextGregorianBirthday.daysUntil + " يومًا)";
+        document.getElementById("out-next-h").textContent = age.nextHijriBirthday.hijri + " = " + age.nextHijriBirthday.gregorian;
+        result.hidden = false;
+      } catch (error) {
+        result.hidden = true;
+        document.getElementById("note").textContent = error.message;
+      }
+    });
+  </script>
+</body>
+</html>
