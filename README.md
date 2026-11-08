@@ -25,11 +25,11 @@ Offline age calculator for the Gregorian calendar and the tabular civil (Kuwaiti
 | `packages/hf-space` | Static page for a later upload | open `index.html` |
 | `skills/hisab-age-calculator` | Agent skill | — |
 
-Registries other than the already published Docker image are **not** published from this repository. See [`STATUS.md`](STATUS.md).
+This repository does not submit packages. What is already live is listed in [`STATUS.md`](STATUS.md).
 
 ## PHP library
 
-Packagist name: `hisabaleumr/age-calculator`. Homepage: `https://hisabaleumr.com/`. Submission is still pending, so install from this checkout:
+Packagist name: `hisabaleumr/age-calculator`. Homepage: `https://hisabaleumr.com/`. The package is live at https://packagist.org/packages/hisabaleumr/age-calculator. From this checkout:
 
 ```sh
 composer install
@@ -53,7 +53,7 @@ $result = AgeCalculator::calculate('١٤٢٠-٠٩-٠١', 'hijri', '2026-11-08');
 
 `calculate($birth, $birthCalendar = 'gregorian', $asOf = null, $asOfCalendar = 'gregorian')` accepts `gregorian` or `hijri`. Omit `$asOf` to use today in the runtime's local timezone. Arabic-Indic digits are accepted. The result array includes `gregorianAge`, `hijriAge`, `totalDays`, `nextGregorianBirthday`, and `nextHijriBirthday`. `homepage` is `https://hisabaleumr.com/`.
 
-After the package is on Packagist, the require line will be `composer require hisabaleumr/age-calculator`. That command does not work yet.
+Install the published package with `composer require hisabaleumr/age-calculator`.
 
 ## Other libraries
 
@@ -98,8 +98,10 @@ Firefox add-on `hisab-age-calculator` 1.0.0 by NBK Apps is awaiting Mozilla revi
 
 ## Elsewhere
 
-These pages already exist. The package registries in the table above are source only.
+Packagist and the GitLab mirror are live. npm, PyPI, crates.io, pub.dev, NuGet, and RubyGems in the table above are source only and were not submitted. Hugging Face is not submitted.
 
+- Packagist: https://packagist.org/packages/hisabaleumr/age-calculator
+- GitLab: https://gitlab.com/nbkdevs/hisab-al-umr
 - Docker Hub: https://hub.docker.com/r/iamnazzal/hisab-age-calculator
 - Design Nominees: https://www.designnominees.com/sites/hisabalumr
 - Product Hunt: https://www.producthunt.com/products/hisabalumr
