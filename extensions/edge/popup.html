@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hisab Age Calculator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1 id="title">حاسبة العمر</h1>
+      <p id="subtitle">هجري وميلادي، على هذا الجهاز</p>
+    </div>
+    <button type="button" id="lang" aria-pressed="false">EN</button>
+  </header>
+  <form id="form">
+    <label id="lbl-birth" for="birth">تاريخ الميلاد</label>
+    <input id="birth" name="birth" inputmode="numeric" autocomplete="off" spellcheck="false" placeholder="1990-05-15" required>
+    <label id="lbl-cal" for="calendar">التقويم</label>
+    <select id="calendar">
+      <option value="gregorian" id="opt-gregorian">ميلادي</option>
+      <option value="hijri" id="opt-hijri">هجري</option>
+    </select>
+    <label id="lbl-asof" for="asof">حتى تاريخ (اختياري)</label>
+    <input id="asof" name="asof" inputmode="numeric" autocomplete="off" spellcheck="false" placeholder="2026-11-08">
+    <button type="submit" id="calc">احسب</button>
+  </form>
+  <section id="result" hidden>
+    <dl>
+      <dt id="lbl-gage">العمر الميلادي</dt>
+      <dd id="out-g"></dd>
+      <dt id="lbl-hage">العمر الهجري</dt>
+      <dd id="out-h"></dd>
+      <dt id="lbl-days">الأيام</dt>
+      <dd id="out-days"></dd>
+      <dt id="lbl-nextg">الميلاد الميلادي القادم</dt>
+      <dd id="out-nextg"></dd>
+      <dt id="lbl-nexth">الميلاد الهجري القادم</dt>
+      <dd id="out-nexth"></dd>
+    </dl>
+  </section>
+  <p id="note"></p>
+  <script src="js/age.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

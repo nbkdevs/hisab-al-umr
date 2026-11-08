@@ -24,6 +24,7 @@ Offline age calculator for the Gregorian calendar and the tabular civil (Kuwaiti
 | `packages/docker` | Local JSON API and the static page. Not pushed | `npm test` |
 | `packages/hf-space` | Static page for a later upload | open `index.html` |
 | `skills/hisab-age-calculator` | Agent skill | — |
+| `extensions/edge` | Edge MV3 popup, source only, not submitted | `node --test extensions/edge/test/extension.test.js` |
 
 Registries other than the already published Docker image are **not** published from this repository. See [`STATUS.md`](STATUS.md).
 
