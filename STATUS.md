@@ -1,13 +1,13 @@
 # Status
 
-This checkout is source only. It does not publish packages, submit stores, or create accounts.
+This checkout does not publish packages, submit stores, or create accounts. The table records what is already live.
 
 Homepage for every package field and for the README link: [حساب العمر بالهجري والميلادي](https://hisabaleumr.com/).
 
 | Destination | State | Notes |
 |---|---|---|
-| Packagist `hisabaleumr/age-calculator` | Pending | Root `composer.json` is ready. Not submitted. |
-| GitLab mirror | Pending | No mirror was created from this checkout. |
+| Packagist `hisabaleumr/age-calculator` | Live | [hisabaleumr/age-calculator](https://packagist.org/packages/hisabaleumr/age-calculator). Homepage [حساب العمر بالهجري والميلادي](https://hisabaleumr.com/). Source https://github.com/nbkdevs/hisab-al-umr. Submitted as user nbkdevs. |
+| GitLab mirror | Live | [nbkdevs/hisab-al-umr](https://gitlab.com/nbkdevs/hisab-al-umr). Public, imported from the GitHub repo by URL. Signed in as nbkdevs. |
 | npm `hisab-age-calculator` | Source only | Not published. |
 | PyPI `hisab-age-calculator` | Source only | Not published. |
 | crates.io `hisab-age-calculator` | Source only | Not published. |
