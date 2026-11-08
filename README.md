@@ -24,7 +24,7 @@ Offline age calculator for the Gregorian calendar and the tabular civil (Kuwaiti
 | `packages/docker` | Local JSON API and the static page. Not pushed | `npm test` |
 | `packages/hf-space` | Static page for a later upload | open `index.html` |
 | `skills/hisab-age-calculator` | Agent skill | — |
-| `extensions/edge` | Edge MV3 popup, source only, not submitted | `node --test extensions/edge/test/extension.test.js` |
+| `extensions/edge` | Edge MV3 popup. Listing submitted, In Review | `node --test extensions/edge/test/extension.test.js` |
 
 This repository does not submit packages. What is already live is listed in [`STATUS.md`](STATUS.md).
 
@@ -99,10 +99,11 @@ Firefox add-on `hisab-age-calculator` 1.0.0 by NBK Apps is awaiting Mozilla revi
 
 ## Elsewhere
 
-Packagist and the GitLab mirror are live. npm, PyPI, crates.io, pub.dev, NuGet, and RubyGems in the table above are source only and were not submitted. Hugging Face is not submitted.
+Packagist and the GitLab mirror are live. The Edge Add-ons listing for Hisab Age Calculator is In Review; the store page may not be public until publication. npm, PyPI, crates.io, pub.dev, NuGet, and RubyGems in the table above are source only and were not submitted. Hugging Face is not submitted.
 
 - Packagist: https://packagist.org/packages/hisabaleumr/age-calculator
 - GitLab: https://gitlab.com/nbkdevs/hisab-al-umr
+- Edge Add-ons (In Review): https://microsoftedge.microsoft.com/addons/detail/hisab-age-calculator/cicfkemnfcippdbiknioffcbcedifeeo
 - Docker Hub: https://hub.docker.com/r/iamnazzal/hisab-age-calculator
 - Design Nominees: https://www.designnominees.com/sites/hisabalumr
 - Product Hunt: https://www.producthunt.com/products/hisabalumr

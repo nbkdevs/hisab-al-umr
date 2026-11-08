@@ -15,6 +15,7 @@ Homepage for every package field and for the README link: [حساب العمر �
 | NuGet `HisabAlUmr.AgeCalculator` | Source only | Not published. |
 | RubyGems `hisab-age-calculator` | Source only | Not published. |
 | Docker Hub `iamnazzal/hisab-age-calculator:1.0.0` | Already published | Not pushed from this repository. Port 8787, `POST /api/v1/age`. Hub tag 1.0.0 clamps 29 February to 28 February; this source uses 1 March. |
+| Edge Add-ons Hisab Age Calculator | In Review | Partner Center, about 7 business days. Product ID `526bc00b-55da-4e61-ab80-7bdf056919bc`. Store ID `0RDCKFTBM927`. CRX ID `cicfkemnfcippdbiknioffcbcedifeeo`. Store page, which may not be public until publication: https://microsoftedge.microsoft.com/addons/detail/hisab-age-calculator/cicfkemnfcippdbiknioffcbcedifeeo. Homepage field [حساب العمر بالهجري والميلادي](https://hisabaleumr.com/). Support field https://hisabaleumr.com/اتصل-بنا/. Privacy field https://hisabaleumr.com/سياسة-الخصوصية/. Submitted from Partner Center. Package `extensions/edge/hisab-age-calculator-edge-1.0.0.zip`. Not a live store page yet. |
 | Firefox AMO `hisab-age-calculator` 1.0.0 | Awaiting review | By NBK Apps. Homepage `https://hisabaleumr.com/`. Not a live add-on page. This repo does not add another extension. |
 | Amazon Appstore | In Review | Hisab Age Calculator, app id `amzn1.devportal.mobileapp.63995c2c6a9946a09acf33df67bee266`. Not live. This repo does not add an Android app. |
 | Design Nominees | Listed | https://www.designnominees.com/sites/hisabalumr |
